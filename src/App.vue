@@ -5,7 +5,7 @@ const isDrawerOpen = ref(false)
 </script>
 
 <template>
-  <v-app theme="">
+  <v-app theme="dark">
     <v-navigation-drawer v-model="isDrawerOpen">
       <v-list>
         <v-list-subheader>Menu</v-list-subheader>
