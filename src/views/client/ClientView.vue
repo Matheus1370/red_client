@@ -12,7 +12,7 @@ import {
 
 const dialogVisible = ref(false)
 const dialogMode = ref('create') // 'create' | 'edit' | 'delete'
-const selectedUser = ref({ name: '', email: '', role: '' })
+const selectedUser = ref({ name: '', email: '', password: '' })
 
 const clients = ref([])
 
@@ -60,7 +60,10 @@ onMounted(async () => {
 
     <!-- Cabeçalho com título e botão -->
     <v-card-title class="d-flex justify-space-between align-center">
-      <span class="text-h6">Clientes</span>
+      <div class="d-flex align-center">
+        <v-icon class="me-3">mdi-account-group</v-icon>
+        <span class="text-h6">Clientes</span>
+      </div>
       <v-btn
         @click="openDialog('create')"
         variant="tonal"
