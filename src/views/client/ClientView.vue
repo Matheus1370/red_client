@@ -17,7 +17,6 @@ const selectedUser = ref({ name: '', email: '', password: '' })
 const clients = ref([])
 
 const headers = [
-  { title: 'ID', key: 'id' },
   { title: 'Nome', key: 'name' },
   { title: 'Email', key: 'email' },
   { title: 'Senha', key: 'password' },
